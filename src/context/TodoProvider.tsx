@@ -20,7 +20,7 @@ interface IContext {
   setTodos: Dispatch<SetStateAction<ITodo[]>>;
 }
 
-const TodoContext = createContext<IContext>({ setTodos: (action: Action) => undefined });
+const TodoContext = createContext<IContext>({ setTodos: (action: any) => undefined });
 
 interface ITodoProviderProps {
   children: ReactNode;
